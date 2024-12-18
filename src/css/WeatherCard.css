@@ -1,0 +1,162 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #0c0c0c;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  color: #f0f0f0;
+}
+
+.weather-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 40px;
+  width: 350px;
+  height: 200px;
+  margin: 20px auto;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+}
+
+.weather-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.weather-icon img {
+  width: 80px;
+  align-self: center;
+}
+
+.weather-info {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.weather-info .description {
+  font-size: 1.2em;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-info p {
+  margin: 5px 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.activities {
+  margin-top: 20px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.forecast-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 40px;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forecast-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.clear {
+  background: linear-gradient(135deg, rgba(135, 206, 235, 0.8), rgba(255, 255, 255, 0.1));
+}
+
+.rain {
+  background: linear-gradient(135deg, rgba(30, 144, 255, 0.5), rgba(255, 255, 255, 0.1));
+}
+
+.snow {
+  background: linear-gradient(135deg, rgba(255, 250, 250, 0.8), rgba(0, 0, 0, 0.1));
+}
+
+.thunderstorm {
+  background: linear-gradient(135deg, rgba(169, 169, 169, 0.5), rgba(255, 255, 255, 0.1));
+}
+
+.mist {
+  background: linear-gradient(135deg, rgba(192, 192, 192, 0.5), rgba(255, 255, 255, 0.1));
+}
+
+.cloudy {
+  background: linear-gradient(135deg, rgba(169, 169, 169, 0.5), rgba(255, 255, 255, 0.1));
+}
+
+.thunderstorm {
+  background: url('https://media1.tenor.com/m/ppNCvD5sbp4AAAAC/elmo-thunder.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.rainy {
+  background: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTJ3NWR4dmNmYWU5bHVuOXRpemo5cXNtdGIzNzdwcjJlcDE1dW93dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/t7Qb8655Z1VfBGr5XB/giphy.webp') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.snowy {
+  background: url('https://media1.tenor.com/m/Em-cMHPXfQEAAAAC/cat-cute.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.sunny {
+  background: url('https://media1.giphy.com/media/paMdZlRXlc96o/200.webp?cid=790b7611d6wbcjfievqkvzmki7rohytv37cbn80k2z848yod&ep=v1_gifs_search&rid=200.webp&ct=g') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.mist {
+  background: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGl5ZHZ2cHBibGhscDl1Z3o2N3c1dnByY3hua24zYmd2b3N5eWU4dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Z98zIhtiePuIo/giphy.webp') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.cloudy {
+  background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmpyemI0ZWFoYnpoM3E3OTBycGtyNzM1YjQydG9rdmxjMTAxZjM1MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YdUdx8jPIKhxe/giphy.webp') no-repeat center center fixed;
+  background-size: cover;
+}
